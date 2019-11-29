@@ -33,7 +33,6 @@ class LabProgXBlock(XBlock):
         """
         html = self.resource_string("static/html/labprog.html")
         frag = Fragment(html.format(self=self))
-        frag.add_css(self.resource_string("static/css/bootstrap.min.css"))
         frag.add_css(self.resource_string("static/css/labprog.css"))
         frag.add_javascript_url("https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js")
         frag.add_javascript(self.resource_string("static/js/src/labprog.js"))
